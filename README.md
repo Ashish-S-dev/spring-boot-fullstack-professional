@@ -416,7 +416,7 @@ mvn spring-boot:run
 The Postman collection is available in:
 
 ```text
-/postman/Attendance-Overtime.postman_collection.json
+https://github.com/Ashish-S-dev/spring-boot-fullstack-professional/blob/main/Postman/Attendance-Overtime.postman_collection.json
 ```
 
 Import the collection into Postman to test all APIs.
