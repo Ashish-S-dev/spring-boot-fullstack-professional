@@ -1,0 +1,206 @@
+{
+  "info": {
+    "_postman_id": "685a7e2b-6c74-4eb3-aca2-deb154d06aec",
+    "name": "Attendance-Overtime",
+    "description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "51619067",
+    "_collection_link": "https://go.postman.co/collection/51619067-685a7e2b-6c74-4eb3-aca2-deb154d06aec?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "localhost:8080/api/attendance/active",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/api/attendance/active",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "attendance",
+            "active"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:8080//api/attendance/clock-in",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"workerId\":4,\r\n    \"siteId\":2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080//api/attendance/clock-in",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "",
+            "api",
+            "attendance",
+            "clock-in"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:8080/api/attendance/clock-out",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"workerId\": 3\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/api/attendance/clock-out",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "attendance",
+            "clock-out"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:8080/api/attendance/log",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/api/attendance/log?workerId=1&from=2026-01-01&to=2026-01-31",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "attendance",
+            "log"
+          ],
+          "query": [
+            {
+              "key": "workerId",
+              "value": "1"
+            },
+            {
+              "key": "from",
+              "value": "2026-01-01"
+            },
+            {
+              "key": "to",
+              "value": "2026-01-31"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:8080/api/overtime/summary/1",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/api/overtime/summary/1?month=2026-05",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "overtime",
+            "summary",
+            "1"
+          ],
+          "query": [
+            {
+              "key": "month",
+              "value": "2026-05"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "localhost:8080/api/overtime/settle/1",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/api/overtime/settle/1?month=2026-05",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "overtime",
+            "settle",
+            "1"
+          ],
+          "query": [
+            {
+              "key": "month",
+              "value": "2026-05"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
