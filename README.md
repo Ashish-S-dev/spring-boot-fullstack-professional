@@ -505,3 +505,6 @@ The diagram illustrates:
 - Payroll Process Flow
 
 ---
+<img width="1280" height="933" alt="WhatsApp Image 2026-06-08 at 6 00 28 PM" src="https://github.com/user-attachments/assets/c4a2d810-7904-4247-82b4-9209dfccffc2" />
+
+
